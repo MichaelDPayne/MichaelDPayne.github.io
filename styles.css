@@ -31,7 +31,7 @@ section {
     background: transparent;
 }
 
-section::before {
+/*section::before {
     content: "";
     position: absolute;
     inset: 20px;
@@ -41,7 +41,7 @@ section::before {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
+}*/
 
 
 
@@ -81,7 +81,12 @@ img {
     background-position: center top;
     background-repeat: no-repeat;
 }
-
+.page-border {
+    background-image: url("NewImages/goldborder-removebg-preview.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
 
 
 .big-heading {
@@ -252,6 +257,7 @@ img {
         inset: 10px;
     }
 }
+
 
 
 
