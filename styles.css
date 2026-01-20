@@ -8,14 +8,28 @@ body {
     background-position: center top;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
 section {
-    background: transparent;
-    min-height: 100vh;              /* All sections same height */
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
     display: flex;
-    align-items: center;            /* Vertical centering */
+    align-items: center;
     justify-content: center;
+
     padding: 5% 5%;
     box-sizing: border-box;
+    background: transparent;
 }
 
 
@@ -63,9 +77,11 @@ img {
 .container-fluid {
     width: 100%;
     max-width: 1200px;
-    padding: 5% 8%;
     margin: auto;
+    padding: 5% 8%;
+    text-align: center;
 }
+
 
 
 .section-heading {
@@ -207,23 +223,19 @@ img {
 /*********************Media Query Breakpoints*****************/
 
 @media (max-width: 768px) {
-    #title {
-        text-align: center;
+
+    body {
+        scroll-snap-type: y proximity; /* Softer snap on mobile */
     }
+
     section {
-        min-height: auto;      /* Prevents awkward scrolling on mobile */
-        padding: 15% 5%;
-    }
-
-    td {
-        padding: 15px;
-    }
-
-    .games-image,
-    .tech-logo {
-        width: 25%;
+        min-height: 100svh; /* Fix mobile browser UI height issues */
+        padding: 15% 6%;
     }
 }
+
+
+
 
 
 
