@@ -7,13 +7,11 @@
 </head>
 <body>
 
-    <h1>Wedding Guest Details</h1>
-
     <form action="#" method="post">
 
         <!-- Name -->
         <fieldset>
-            <legend>Guest Name</legend>
+            <legend>Guest Details</legend>
             <label>
                 Name:
                 <input type="text" name="guest_name" required>
@@ -30,7 +28,7 @@
             </label>
             <label>
                 <input type="checkbox" name="starter[]" value="Bhaji">
-                Auberine & Spinach Bhaji (V)
+                Auberine & Spinach Bhaji (Vg)
             </label>
 
         <!-- Main -->
@@ -52,7 +50,7 @@
             <sub>Dessert</sub>
             <label>
                 <input type="checkbox" name="dessert[]" value="Trio">
-                Trio: Warm Chocolate Fondant, Vanilla Panna Cotta & Lemon Posset
+                Trio: Warm Chocolate Fondant, Vanilla Panna Cotta & Lemon Posset (V)
             </label>
         </fieldset>
 
@@ -60,9 +58,15 @@
         <!-- Accommodation -->
         <fieldset>
             <legend>Accommodation</legend>
+            There are a number of rooms at the venue, we have allocated a room to you if you wish!
+            Would you like to stay the night?
             <label>
                 <input type="checkbox" name="accommodation" value="Yes">
-                I require accommodation
+                Yes please!
+            </label>
+            <label>
+                <input type="checkbox" name="accommodation" value="No">
+                Sorry, I can't stay.
             </label>
         </fieldset>
 
