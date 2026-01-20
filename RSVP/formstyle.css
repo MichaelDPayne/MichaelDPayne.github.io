@@ -1,6 +1,6 @@
 /* Base styles */
 body {
-    font-family: 'Snell Roundhand', cursive;
+    font-family: 'Helvetica', Sans-serif;
     text-align: center;
     max-width: 600px;
     margin: 40px auto;
@@ -25,13 +25,15 @@ fieldset {
 }
 
 legend {
+    font-family: 'Lucida Handwriting', cursive;
     font-weight: bold;
     padding: 0 10px;
     color: #ad2857; 
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 sub {
+    font-family: 'Lucida Handwriting', cursive;
     font-size: 2rem;
     color: #e3a6bb;
     
