@@ -1,174 +1,43 @@
-
 body {
-    font-family: 'Snell Roundhand', cursive;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
     text-align: center;
 }
 
-button {
-    margin: 3%;
+form {
+    margin-top: 30px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
     font-weight: bold;
+    padding: 0 10px;
 }
 
-p {
-    font-size: 1.25rem;
+label {
+    display: block;
+    margin: 8px 0;
 }
 
-td {
-    padding: 30px;
-}
-
-
-/*****************CLASSES*****************/
-
-.big-heading {
-    font-size: 3.5rem;
-    line-height: 1.5;
-    margin: 3%;
-}
-
-.container-fluid {
-    padding: 7% 15%;
-}
-
-.section-heading {
-    font-size: 2.5rem;
-    padding-bottom: 5%;
-}
-
-/* About Classes */
-
-.about-heading {
-    padding: 2% 0 1% 0;
-}
-
-/* Navbar Classes */
-
-.navbar a {
-    color: sandybrown;
-}
-
-    .navbar a:hover {
-        color: tan;
-    }
-
-.navbar-toggler {
-    color: sandybrown;
-}
-
-/* Features Classes */
-
-.featicon {
-    color: sandybrown;
-    position: static;
-    z-index: 2;
-}
-
-    .featicon:hover {
-        color: mediumorchid;
-    }
-
-.feature-heading {
-    padding: 6% 0 3% 0;
-}
-
-/* Games Section Classes */
-
-.games-image {
-    margin-bottom: 3%;
-    width: 10%;
-}
-
-.games-text {
-    font-size: 3.5rem;
-    font-weight: 700;
-    padding: 5% 30% 5%;
-}
-
-/* Tech Section Classes */
-
-.tech-logo {
-    width: 10%;
-    height: 5%;
-    margin: 3%;
-    padding: 2%;
-}
-
-/* Title Section Classes */
-
-#title .container-fluid {
-    padding: 3% 15% 7%;
-}
-
-/*********************ID*****************/
-
-/* Navbar Id's */
-
-#brand {
-    font-family: 'Snell Roundhand', cursive;
-    font-size: 2rem;
-}
-
-/* Call to Action Section Id's */
-
-#cta {
-    background-color: floralwhite;
-}
-
-/* Feature Id's */
-
-#features {
-    margin: 5% 5%;
-    line-height: 1.5;
-}
-
-/* Footer Id's */
-
-#footer {
-    background-color: floralwhite;
-}
-
-    #footer a {
-        padding: 10px 20px;
-    }
-
-    #footer p {
-        margin: 0;
-    }
-
-/* Games Id's*/
-
-#games {
-    background-color: #FFFAF0;
-}
-
-/* Tech Id's */
-
-#tech {
-    background-color: #FFFAF0;
-}
-
-/* Title Id's */
-
-#title {
-    background-color: floralwhite;
-    text-align: left;
-}
-
-#title-img {
-    margin: 5%;
+input[type="text"] {
     width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
 }
 
-/* About Section Id's*/
-
-/*********************Media Query Breakpoints*****************/
-
-@media (max-width: 1028px) {
-    #title {
-        text-align: center;
-    }
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
-
