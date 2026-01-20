@@ -2,11 +2,9 @@
 body {
     font-family: 'Snell Roundhand', cursive;
     text-align: center;
-    background-image: url("NewImages/Background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center top;
+    margin: 0;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -61,11 +59,16 @@ img {
 
 
 .page-bg {
-  background-image: url("NewImages/Background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background-image: url("NewImages/Background.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
+
 
 
 .big-heading {
@@ -233,6 +236,7 @@ img {
         padding: 15% 6%;
     }
 }
+
 
 
 
