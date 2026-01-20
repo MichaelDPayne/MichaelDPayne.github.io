@@ -1,6 +1,6 @@
 /* Base styles */
 body {
-    font-family: Opera;
+    font-family: 'Snell Roundhand', cursive;
     text-align: center;
     max-width: 600px;
     margin: 40px auto;
@@ -27,6 +27,8 @@ fieldset {
 legend {
     font-weight: bold;
     padding: 0 10px;
+    color: #ad2857; 
+    font-size: 3rem;
 }
 
 label {
