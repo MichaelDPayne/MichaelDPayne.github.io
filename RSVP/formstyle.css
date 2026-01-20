@@ -1,26 +1,22 @@
-/* Base styles */
 body {
     font-family: Arial, sans-serif;
     max-width: 600px;
     margin: 40px auto;
     padding: 0 20px;
-    line-height: 1.5;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
 }
 
 form {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 fieldset {
     border: 1px solid #ccc;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 6px;
 }
 
 legend {
@@ -30,75 +26,18 @@ legend {
 
 label {
     display: block;
-    margin: 10px 0;
-    cursor: pointer;
+    margin: 8px 0;
 }
 
 input[type="text"] {
     width: 100%;
-    padding: 10px;
-    margin-top: 6px;
+    padding: 8px;
+    margin-top: 5px;
     box-sizing: border-box;
-    font-size: 16px;
-}
-
-input[type="checkbox"] {
-    margin-right: 8px;
-    transform: scale(1.1);
 }
 
 button {
-    width: 100%;
-    padding: 14px;
-    font-size: 18px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    border: none;
-    border-radius: 6px;
-    background-color: #333;
-    color: #fff;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Tablet and up */
-@media (min-width: 768px) {
-    body {
-        max-width: 700px;
-    }
-
-    fieldset {
-        padding: 20px;
-    }
-
-    label {
-        font-size: 16px;
-    }
-
-    button {
-        width: auto;
-        padding: 12px 30px;
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-/* Small mobile screens */
-@media (max-width: 480px) {
-    body {
-        margin: 20px auto;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    legend {
-        font-size: 16px;
-    }
-
-    label {
-        font-size: 15px;
-    }
 }
