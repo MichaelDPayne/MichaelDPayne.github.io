@@ -37,7 +37,7 @@ section::before {
     inset: 20px;
     pointer-events: none;
 
-    background-image: url("NewImages/Borders.jpg");
+    background-image: url("NewImages/goldborder-removebg-preview.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -252,6 +252,7 @@ img {
         inset: 10px;
     }
 }
+
 
 
 
