@@ -31,6 +31,12 @@ legend {
     font-size: 3rem;
 }
 
+sub {
+    font-size: 2rem;
+    color: #e3a6bb;
+    
+}
+
 label {
     display: block;
     margin: 10px 0;
