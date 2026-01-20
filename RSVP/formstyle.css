@@ -77,7 +77,6 @@ button:hover {
 .border-image {
     border: 40px solid transparent;
     border-image-source: url("Images/pinkborder1");
-    border-image-slice: 40;
 }
 
 /* Tablet and up */
