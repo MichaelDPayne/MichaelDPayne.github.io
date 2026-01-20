@@ -20,6 +20,7 @@ section {
     min-height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    position: relative;
 
     display: flex;
     align-items: center;
@@ -28,6 +29,18 @@ section {
     padding: 5% 5%;
     box-sizing: border-box;
     background: transparent;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    inset: 20px;
+    pointer-events: none;
+
+    background-image: url("NewImages/Borders.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -235,7 +248,11 @@ img {
         min-height: 100svh; /* Fix mobile browser UI height issues */
         padding: 15% 6%;
     }
+    section::before {
+        inset: 10px;
+    }
 }
+
 
 
 
