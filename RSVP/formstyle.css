@@ -96,7 +96,7 @@ button:hover {
 }
 
 /* Small mobile screens */
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     body {
         margin: 20px auto;
     }
@@ -112,4 +112,4 @@ button:hover {
     label {
         font-size: 15px;
     }
-}
+}*/
