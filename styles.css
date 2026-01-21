@@ -43,6 +43,16 @@ section {
     background-position: center;
 }*/
 
+.section:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: url("wave.svg") no-repeat center / cover;
+  z-index: 2;
+
 
 
 button {
@@ -81,7 +91,7 @@ img {
     background-position: center top;
     background-repeat: no-repeat;
 }
-.page-border {
+/*.page-border {
     position: absolute;
     inset: 20px;
 
@@ -92,7 +102,7 @@ img {
 
     pointer-events: none;
     z-index: 1;
-}
+}*/
 
 
 
