@@ -1,174 +1,120 @@
-
+/* Base styles */
 body {
-    font-family: 'Snell Roundhand', cursive;
+    font-family: 'Lucida Handwriting', cursive;
     text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border-color: #ad2857;
+}
+
+legend {
+    font-family: 'Lucida Handwriting', cursive;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #ad2857; 
+    font-size: 2.5rem;
+}
+
+sub {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+    color: #e3a6bb;
+    
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
 }
 
 button {
-    margin: 3%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-}
-
-p {
-    font-size: 1.25rem;
-}
-
-td {
-    padding: 30px;
-}
-
-
-/*****************CLASSES*****************/
-
-.big-heading {
-    font-size: 3.5rem;
-    line-height: 1.5;
-    margin: 3%;
-}
-
-.container-fluid {
-    padding: 7% 15%;
-}
-
-.section-heading {
-    font-size: 2.5rem;
-    padding-bottom: 5%;
-}
-
-/* About Classes */
-
-.about-heading {
-    padding: 2% 0 1% 0;
-}
-
-/* Navbar Classes */
-
-.navbar a {
-    color: sandybrown;
-}
-
-    .navbar a:hover {
-        color: tan;
-    }
-
-.navbar-toggler {
-    color: sandybrown;
-}
-
-/* Features Classes */
-
-.featicon {
-    color: sandybrown;
-    position: static;
-    z-index: 2;
-}
-
-    .featicon:hover {
-        color: mediumorchid;
-    }
-
-.feature-heading {
-    padding: 6% 0 3% 0;
-}
-
-/* Games Section Classes */
-
-.games-image {
-    margin-bottom: 3%;
-    width: 10%;
-}
-
-.games-text {
-    font-size: 3.5rem;
-    font-weight: 700;
-    padding: 5% 30% 5%;
-}
-
-/* Tech Section Classes */
-
-.tech-logo {
-    width: 10%;
-    height: 5%;
-    margin: 3%;
-    padding: 2%;
-}
-
-/* Title Section Classes */
-
-#title .container-fluid {
-    padding: 3% 15% 7%;
-}
-
-/*********************ID*****************/
-
-/* Navbar Id's */
-
-#brand {
-    font-family: 'Snell Roundhand', cursive;
-    font-size: 2rem;
-}
-
-/* Call to Action Section Id's */
-
-#cta {
-    background-color: floralwhite;
-}
-
-/* Feature Id's */
-
-#features {
-    margin: 5% 5%;
-    line-height: 1.5;
-}
-
-/* Footer Id's */
-
-#footer {
-    background-color: floralwhite;
-}
-
-    #footer a {
-        padding: 10px 20px;
-    }
-
-    #footer p {
-        margin: 0;
-    }
-
-/* Games Id's*/
-
-#games {
-    background-color: #FFFAF0;
-}
-
-/* Tech Id's */
-
-#tech {
-    background-color: #FFFAF0;
-}
-
-/* Title Id's */
-
-#title {
-    background-color: floralwhite;
-    text-align: left;
-}
-
-#title-img {
-    margin: 5%;
     width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
 }
 
-/* About Section Id's*/
+button:hover {
+    background-color: #555;
+}
 
-/*********************Media Query Breakpoints*****************/
+.border-image {
+    border-image-source: url("Images/pinkborder1");
+}
 
-@media (max-width: 1028px) {
-    #title {
-        text-align: center;
+/* Tablet and up */
+/*@media (min-width: 768px) {
+    body {
+        max-width: 700px;
     }
-}
 
+    fieldset {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    button {
+        width: auto;
+        padding: 12px 30px;
+        display: block;
+        margin: 0 auto;
+    }
+} */
+
+/* Small mobile screens */
+/*@media (max-width: 480px) {
+    body {
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+}*/
