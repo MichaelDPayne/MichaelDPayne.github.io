@@ -82,13 +82,18 @@ img {
     background-repeat: no-repeat;
 }
 .page-border {
-    inset: 0;
-    z-index: -1;
-    background-image: url("NewImages/Background.jpg");
-    background-size: cover;
-    background-position: center top;
+    position: absolute;
+    inset: 20px;
+
+    background-image: url("NewImages/goldborder-removebg-preview.png");
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
+
+    pointer-events: none;
+    z-index: 1;
 }
+
 
 
 .big-heading {
@@ -259,6 +264,7 @@ img {
         inset: 10px;
     }
 }
+
 
 
 
