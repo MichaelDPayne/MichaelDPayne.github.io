@@ -84,7 +84,7 @@ img {
 .page-border {
     inset: 0;
     z-index: -1;
-    background-image: url("NewImages/goldborder-removebg-preview.png");
+    background-image: url("NewImages/Background.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -259,6 +259,7 @@ img {
         inset: 10px;
     }
 }
+
 
 
 
