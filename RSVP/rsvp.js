@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (this.value === "Yes") {
         extraFields.style.display = "block";
 
-        nameValue = document.querySelector('input[guest_name="guest_name"]')?.value || "";
+        nameValue = document.querySelector('input[name="guest_name"]')?.value || "";
         console.log("nameValue = " +nameValue);
 
         if (nameValue.includes("Pete")) {
