@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const radios = document.querySelectorAll('input[name="coming"]');
   const extraFields = document.getElementById("extraFields");
-  const accomodation = document.getElementById("Accomodation");
+  const accomodation = document.getElementById("accomodation");
   const name = document.getElementById("guest_name");
   var nameValue = "";
 
