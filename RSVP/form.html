@@ -21,11 +21,11 @@
                 <fieldset>
                     <sub>Are you able to join us?</sub>
                     <label>
-                        <input type="checkbox" name="coming" value="Yes">
+                        <input type="checkbox" name="coming" value="Yes" onclick="onlyOne(this)">
                         Accept with pleasure
                     </label>
                     <label>
-                        <input type="checkbox" name="coming" value="No">
+                        <input type="checkbox" name="coming" value="No" onclick="onlyOne(this)">
                         Decline, will be there in spirit
                     </label>
                 </fieldset>
@@ -38,11 +38,11 @@
             <div class="border-image"></div>
             <sub>Starter</sub>
             <label>
-                <input type="checkbox" name="starter[]" value="Pork">
+                <input type="checkbox" name="starter[]" value="Pork" onclick="onlyOne(this)">
                 Confit Belly of Pork
             </label>
             <label>
-                <input type="checkbox" name="starter[]" value="Bhaji">
+                <input type="checkbox" name="starter[]" value="Bhaji" onclick="onlyOne(this)">
                 Auberine & Spinach Bhaji (Vg)
             </label>
 
