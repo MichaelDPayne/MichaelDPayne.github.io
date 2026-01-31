@@ -137,7 +137,7 @@ img {
 }
 
 .sect{
-    margin: 30%;
+    margin: 10%;
 }
 
 /*.sect {
@@ -265,8 +265,7 @@ img {
 }
 
 #title-img {
-    margin: auto;
-    width: 100%;
+    align-self: center;
 }
 
 /* About Section Id's*/
