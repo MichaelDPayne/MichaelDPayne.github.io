@@ -2,13 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const radios = document.querySelectorAll('input[name="coming"]');
   const extraFields = document.getElementById("extraFields");
   const name = document.getElementById("guest_name");
-  const nameValue = document.querySelector('input[name="guest_name"]')?.value || "";
+  const nameValue = "";
 
-  console.log("Test1");
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
       if (this.value === "Yes") {
         extraFields.style.display = "block";
+
+        nameValue = document.querySelector('input[guest_name="guest_name"]')?.value || "";
+        console.log("nameValue = " +nameValue);
+
         if (nameValue.includes("Pete")) {
           console.log("Success");
         }
