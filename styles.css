@@ -169,43 +169,9 @@ img {
     color: sandybrown;
 }
 
-/* Features Classes */
-
-.featicon {
-    color: sandybrown;
-    position: static;
-    z-index: 2;
-}
-
-    .featicon:hover {
-        color: mediumorchid;
-    }
 
 .feature-heading {
     padding: 6% 0 3% 0;
-}
-
-/* Games Section Classes */
-
-.games-image {
-    margin-bottom: 3%;
-    width: 10%;
-}
-
-.games-text {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 700;
-    padding: 5% 10%;
-}
-
-
-/* Tech Section Classes */
-
-.tech-logo {
-    width: 10%;
-    height: 5%;
-    margin: 3%;
-    padding: 2%;
 }
 
 /* Title Section Classes */
@@ -216,50 +182,8 @@ img {
 
 /*********************ID*****************/
 
-/* Navbar Id's */
-
-#brand {
-    font-family: 'Snell Roundhand', cursive;
-    font-size: 2rem;
-}
-
 /* Call to Action Section Id's */
 
-
-
-/* Feature Id's */
-
-#features {
-    margin: 5% 5%;
-    line-height: 1.5;
-}
-
-/* Footer Id's */
-
-
-
-    #footer a {
-        padding: 10px 20px;
-    }
-
-    #footer p {
-        margin: 0;
-    }
-
-/* Games Id's*/
-
-
-
-/* Tech Id's */
-
-
-
-/* Title Id's */
-
-#title {
-
-    text-align: left;
-}
 
 #title-img {
     align-self: center;
