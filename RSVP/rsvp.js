@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const name = document.getElementById("guest_name");
   const nameValue = document.querySelector('input[name="guest_name"]')?.value || "";
 
+  console.log("Test1");
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
       if (this.value === "Yes") {
