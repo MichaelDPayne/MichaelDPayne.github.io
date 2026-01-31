@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const accommodation = document.getElementById("accommodation");
   const name = document.getElementById("guest_name");
   var nameValue = "";
-  var nameList = ["pete","shirley","emma"];
+  var nameList = ["pete","shirley","emma","cherry","james","vicky"];
 
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nameValue = document.querySelector('input[name="guest_name"]')?.value || "";
         console.log("nameValue = " +nameValue);
 
-        if (nameValue.toLowerCase().includes("pete")) {
+        if (nameValue.toLowerCase().includes(nameList)) {
           accommodation.style.display = "block";
         }
         else {
