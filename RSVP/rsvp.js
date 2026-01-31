@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const radios = document.querySelectorAll('input[name="coming"]');
   const extraFields = document.getElementById("extraFields");
-  const accomodation = document.getElementById("accomodation");
+  const accommodation = document.getElementById("accommodation");
   const name = document.getElementById("guest_name");
   var nameValue = "";
 
@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("nameValue = " +nameValue);
 
         if (nameValue.includes("Pete")) {
-          accomodation.style.display = "block";
+          accommodation.style.display = "block";
         }
         else {
-          accomodation.style.display = "none";
+          accommodation.style.display = "none";
         }
 
       } else {
