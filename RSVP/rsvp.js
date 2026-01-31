@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     radio.addEventListener("change", function () {
       if (this.value === "Yes") {
         extraFields.style.display = "block";
-        if (name.textContent.includes("Pete")) {
+        if (name.value.includes("Pete")) {
           console.log("Success");
         }
 
