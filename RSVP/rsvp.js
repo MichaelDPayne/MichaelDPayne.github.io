@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
-      if (this.value === "yes") {
+      if (this.value === "Yes") {
         extraFields.style.display = "block";
       } else {
         extraFields.style.display = "none";
