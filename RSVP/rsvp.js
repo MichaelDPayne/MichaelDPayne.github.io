@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       } else {
         extraFields.style.display = "none";
+        accommodation.style.display = "none";
       }
     });
   });
