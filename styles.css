@@ -43,7 +43,7 @@ section {
     background-position: center;
 }*/
 
-.section:not(:last-child)::after {
+/* .section:not(:last-child)::after {
   content: "";
   position: absolute;
   bottom: -40px;
@@ -53,7 +53,7 @@ section {
   background: url("wave.svg") no-repeat center / cover;
   z-index: 2;
 
-}
+} */
 
 button {
     margin: 3%;
