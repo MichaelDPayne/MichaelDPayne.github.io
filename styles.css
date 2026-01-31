@@ -136,6 +136,10 @@ img {
     padding-bottom: 5%;
 }
 
+.sect{
+    margin: 10%;
+}
+
 /*.sect {
      background-image: url("NewImages/Background.jpg");
   background-size: 100vw auto;
