@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const accommodation = document.getElementById("accommodation");
   const name = document.getElementById("guest_name");
   var nameValue = "";
-  var nameList = ["pete","shirley","emma","cherry","james","vicky"];
+  const nameList = ["pete","shirley","emma","cherry","james","vicky"];
 
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
