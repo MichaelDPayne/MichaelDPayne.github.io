@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const extraFields = document.getElementById("extraFields");
 
   radios.forEach(radio => {
-    radios.addEventListener("change", function () {
+    radio.addEventListener("change", function () {
       if (this.value === "Yes") {
         extraFields.style.display = "block";
-        if (radios.textContent.includes("Pete")) {
+        if (radio.textContent.includes("Pete")) {
           console.log("Success");
         }
 
