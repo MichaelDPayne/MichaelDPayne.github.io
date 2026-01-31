@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const accommodation = document.getElementById("accommodation");
   const name = document.getElementById("guest_name");
   var nameValue = "";
-  const nameList = ["pete","shirley","emma","cherry","james","vicky"];
+  const nameList = ["pete","shirley","emma","cherry","james","vicky","callum","debbie","victoria","lauren","ricky","george","georgina","mike","michael","mia","russ","steph","sean","breda","harry","ginny","harrison","virginia","robyn","jonah","matthew","matt","geraldine","danielle","dan","penny"];
 
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
