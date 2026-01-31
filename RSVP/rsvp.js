@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nameValue = document.querySelector('input[name="guest_name"]')?.value || "";
         console.log("nameValue = " +nameValue);
 
-        if (nameValue.toLowerCase().includes(nameList)) {
+        if (nameList.some(name => nameValue.toLowerCase()).includes(name)) {
           accommodation.style.display = "block";
         }
         else {
