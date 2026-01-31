@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   const radios = document.querySelectorAll('input[name="coming"]');
   const extraFields = document.getElementById("extraFields");
+  const name = document.getElementById('guest_name');
 
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
       if (this.value === "Yes") {
         extraFields.style.display = "block";
-        if (radio.textContent.includes("Pete")) {
+        if (name.textContent.includes("Pete")) {
           console.log("Success");
         }
 
