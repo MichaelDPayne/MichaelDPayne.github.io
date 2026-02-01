@@ -66,15 +66,28 @@ html {
 } */
 
 button {
-    margin: 3%;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #ad2857;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #e3a6bb;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+    color: #ad2857;
 }
 
 p {
     font-size: clamp(1rem, 2.5vw, 1.75rem);
+    color: #e3a6bb;
 }
 
 td {
