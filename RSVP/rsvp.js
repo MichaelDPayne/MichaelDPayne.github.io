@@ -72,12 +72,12 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
     document.querySelector('input[name="guest_name"]').value || "test2";
 
   const Starter =
-    document.querySelector('input[name="Starter[]"]:checked')?.value || "";
+    document.querySelector('input[name="Starter"]:checked')?.value || "test1";;
 
 
   fetch("https://script.google.com/macros/s/AKfycbzzXBOKEG4qimBw0JyVvF97J5p098mYWDNrRw-Vu7Hj4xFHFIutuieGyhkrc4ndK5VW/exec", {
     method: "POST",
-    body: JSON.stringify({ Name, Attending , Starter})
+    body: JSON.stringify({ Name, Attending, Starter})
   })
   .then(res => res.json())
   .then(() => {
