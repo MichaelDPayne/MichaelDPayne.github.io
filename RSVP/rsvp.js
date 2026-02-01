@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   p1radios.forEach(p1radio => {
     p1radio.addEventListener("change", function () {
-      if (this.Value === "Yes") {
+      if (this.value === "Yes") {
         console.log("Success");
         plusoneExtra.style.display = "block";
       }
