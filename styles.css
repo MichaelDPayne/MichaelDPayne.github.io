@@ -142,7 +142,13 @@ img {
     z-index: 1;
 }*/
 
-
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border-color: #ad2857;
+}
 
 .big-heading {
     font-size: clamp(4rem, 5vw, 5rem);
