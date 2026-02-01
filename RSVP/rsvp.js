@@ -60,3 +60,31 @@ checkboxes.forEach((item) => {
 if (item !== checkbox) item.checked = false;
 });
 }
+
+
+document.getElementById("rsvpForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const coming =
+    document.querySelector('input[name="coming"]:checked')?.value || "";
+
+  const name =
+    document.querySelector('input[name="guest_name"]').value || "";
+
+  fetch("https://script.google.com/macros/s/AKfycbzzXBOKEG4qimBw0JyVvF97J5p098mYWDNrRw-Vu7Hj4xFHFIutuieGyhkrc4ndK5VW/exec", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ coming, name })
+  })
+  .then(res => res.json())
+  .then(() => {
+    alert("Response saved!");
+    this.reset();
+  })
+  .catch(err => {
+    console.error(err);
+    alert("Something went wrong");
+  });
+});
