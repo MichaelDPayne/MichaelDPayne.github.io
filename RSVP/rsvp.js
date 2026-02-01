@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const accommodation = document.getElementById("accommodation");
   const plusone = document.getElementById("plusone");
   const plusoneExtra = document.getElementById("plusoneExtra");
-  const nameField = this.document.getElementById("guest_name");
+  const nameField = this.document.querySelectorAll('input[name="guest_name"]');
   const comingSection = this.document.getElementById("comingSec");
   var nameValue = "";
   const nameList = ["pete","shirley","emma","cherry","james","vicky","callum","debbie","victoria","lauren","ricky","george","georgina","mike","michael","mia","russ","steph","sean","breda","harry","ginny","harrison","virginia","robyn","jonah","matthew","matt","geraldine","danielle","dan","penny",];
