@@ -11,6 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const nameList = ["pete","shirley","emma","cherry","james","vicky","callum","debbie","victoria","lauren","ricky","george","georgina","mike","michael","mia","russ","steph","sean","breda","harry","ginny","harrison","virginia","robyn","jonah","matthew","matt","geraldine","danielle","dan","penny",];
   const p1List = ["mia","becky","dan","penny","sarah","jodie","russ","amy","emma","george","georgina"]
 
+    nameField.addEventListener("input", () => {
+  const hasName = nameField.value.trim().length > 0;
+
+  comingSection.style.display = hasName ? "block" : "none";
+
+  // Optional: reset coming radios if name is cleared
+  if (!hasName) {
+    document
+      .querySelectorAll('input[name="coming"]')
+      .forEach(radio => radio.checked = false);
+  }
+})
+
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
       if (this.value === "Yes") {
@@ -55,18 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  nameField.addEventListener("input", () => {
-  const hasName = nameField.value.trim().length > 0;
 
-  comingSection.style.display = hasName ? "block" : "none";
-
-  // Optional: reset coming radios if name is cleared
-  if (!hasName) {
-    document
-      .querySelectorAll('input[name="coming"]')
-      .forEach(radio => radio.checked = false);
-  }
-})
 });
 
 function onlyOne(checkbox) {
