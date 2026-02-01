@@ -101,6 +101,10 @@ img {
     background-position: center;
     background-size: cover;
     z-index: -1;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 /*.page-border {
     position: absolute;
