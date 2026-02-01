@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const radios = document.querySelectorAll('input[name="coming"]');
+  const p1radios = document.querySelectorAll('input[name=p1');
   const extraFields = document.getElementById("extraFields");
   const accommodation = document.getElementById("accommodation");
   const plusone = document.getElementById("plusone");
+  const plusoneExtra = document.getElementById("plusoneExtra");
   var nameValue = "";
   const nameList = ["pete","shirley","emma","cherry","james","vicky","callum","debbie","victoria","lauren","ricky","george","georgina","mike","michael","mia","russ","steph","sean","breda","harry","ginny","harrison","virginia","robyn","jonah","matthew","matt","geraldine","danielle","dan","penny",];
   const p1List = ["pete","shirley","emma","lauren","george","georgina","mia","russ","ginny","virginia","becky","dan","penny","sarah","sean","steph","cherry","james","jonah","robyn"]
@@ -33,6 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
         extraFields.style.display = "none";
         accommodation.style.display = "none";
         plusone.style.display = "none";
+      }
+    });
+  });
+
+  p1radios.forEach(p1radio => {
+    p1radio.addEventListener("change", function () {
+      if (this.Value === "Yes") {
+        plusoneExtra.style.display = "block";
+      }
+      else {
+        plusoneExtra.style.display = "none";
       }
     });
   });
