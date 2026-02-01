@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-size: clamp(1rem, 2.5vw, 1.75rem);
-    color: #e3a6bb;
+    color: #b6738b;
 }
 
 td {
@@ -154,6 +154,14 @@ fieldset {
     font-size: clamp(4rem, 5vw, 5rem);
     line-height: 1.3;
     margin: 3%;
+}
+
+.OOTDTime{
+    color: #ad2857;
+}
+
+.OOTDItem{
+    font-weight: bold;
 }
 
 /* .container-fluid {
