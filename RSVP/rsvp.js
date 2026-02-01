@@ -66,49 +66,49 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const Attending =
-    document.querySelector('input[name="coming"]:checked')?.value || "blank";
+    document.querySelector('input[name="coming"]:checked')?.value || "N/A";
 
   const Name =
-    document.querySelector('input[name="guest_name"]').value || "blank";
+    document.querySelector('input[name="guest_name"]').value || "N/A";
 
   const Starter =
-    document.querySelector('input[name="starter"]:checked')?.value || "blank";
+    document.querySelector('input[name="starter"]:checked')?.value || "N/A";
     
   const Main =
-    document.querySelector('input[name="main"]:checked')?.value || "blank";
+    document.querySelector('input[name="main"]:checked')?.value || "N/A";
 
   const Dessert =
-    document.querySelector('input[name="dessert"]:checked')?.value || "blank";    
+    document.querySelector('input[name="dessert"]:checked')?.value || "N/A";    
 
   const Diet =
-    document.querySelector('input[name="diet"]').value || "blank";
+    document.querySelector('input[name="diet"]').value || "N/A";
 
   const Wine =
-    document.querySelector('input[name="wine"]:checked')?.value || "blank";
+    document.querySelector('input[name="wine"]:checked')?.value || "N/A";
 
   const Accomodation =
-    document.querySelector('input[name="accommodation"]:checked')?.value || "blank";
+    document.querySelector('input[name="accommodation"]:checked')?.value || "N/A";
 
   const PlusOne =
-    document.querySelector('input[name="p1"]:checked')?.value || "blank";
+    document.querySelector('input[name="p1"]:checked')?.value || "N/A";
 
   const PlusName =
-    document.querySelector('input[name="p1_name"]').value || "blank";
+    document.querySelector('input[name="p1_name"]').value || "N/A";
 
   const PlusStarter =
-    document.querySelector('input[name="starter2"]:checked')?.value || "blank";
+    document.querySelector('input[name="starter2"]:checked')?.value || "N/A";
     
   const PlusMain =
-    document.querySelector('input[name="main2"]:checked')?.value || "blank";
+    document.querySelector('input[name="main2"]:checked')?.value || "N/A";
 
   const PlusDessert =
-    document.querySelector('input[name="dessert2"]:checked')?.value || "blank";    
+    document.querySelector('input[name="dessert2"]:checked')?.value || "N/A";    
 
   const PlusDiet =
-    document.querySelector('input[name="diet2"]').value || "blank";
+    document.querySelector('input[name="diet2"]').value || "N/A";
 
   const PlusWine =
-    document.querySelector('input[name="wine2"]:checked')?.value || "blank";
+    document.querySelector('input[name="wine2"]:checked')?.value || "N/A";
 
   fetch("https://script.google.com/macros/s/AKfycbzzXBOKEG4qimBw0JyVvF97J5p098mYWDNrRw-Vu7Hj4xFHFIutuieGyhkrc4ndK5VW/exec", {
     method: "POST",
