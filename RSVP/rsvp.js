@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     nameField.addEventListener("input", () => {
   const hasName = nameField.value.trim().length > 0;
+  console.log("change!")
 
   comingSection.style.display = hasName ? "block" : "none";
 
