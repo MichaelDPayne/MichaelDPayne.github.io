@@ -116,9 +116,8 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
   })
   .then(res => res.json())
   .then(() => {
-    alert("Response saved!");
+    //alert("Response saved!");
     window.location.href = "thanks.html";
-    this.reset();
   })
   .catch(err => {
     console.error(err);
