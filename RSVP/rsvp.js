@@ -117,7 +117,7 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
   .then(res => res.json())
   .then(() => {
     alert("Response saved!");
-    location.replace("MichaelDPayne/MichaelDPayne.github.io/RSVP/thanks.html")
+    window.location.href = "RSVP/thanks.html";
     this.reset();
   })
   .catch(err => {
