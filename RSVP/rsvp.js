@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         extraFields.style.display = "none";
         accommodation.style.display = "none";
         plusone.style.display = "none";
+        plusoneExtra.style.display = "none";
       }
     });
   });
