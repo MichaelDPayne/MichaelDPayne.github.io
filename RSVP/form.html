@@ -35,7 +35,6 @@
         <!-- Starter -->
         <fieldset>
             <legend>Wedding Menu</legend>
-            <div class="border-image"></div>
             <sub>Starter</sub>
             <label>
                 <input type="checkbox" name="starter[]" value="Pork" onclick="onlyOne(this)">
@@ -79,23 +78,23 @@
             </label>
             <label>
                 Any song requests?
-                <input type="text" name="diet">
+                <input type="text" name="song">
             </label>
             <sub>Favourite Wine?</sub>
             <label>
-                <input type="checkbox" name="main[]" value="White" onclick="onlyOne(this)">
+                <input type="checkbox" name="wine[]" value="White" onclick="onlyOne(this)">
                 White
             </label>
             <label>
-                <input type="checkbox" name="main[]" value="Red" onclick="onlyOne(this)">
+                <input type="checkbox" name="wine[]" value="Red" onclick="onlyOne(this)">
                 Red
             </label>
             <label>
-                <input type="checkbox" name="main[]" value="Rose" onclick="onlyOne(this)">
+                <input type="checkbox" name="wine[]" value="Rose" onclick="onlyOne(this)">
                 Rose
             </label>
             <label>
-                <input type="checkbox" name="main[]" value="None" onclick="onlyOne(this)">
+                <input type="checkbox" name="wine[]" value="None" onclick="onlyOne(this)">
                 None
             </label>
         </fieldset>
@@ -136,10 +135,80 @@
                     </label>
                     <label>
                         Name:
-                        <input type="text" name="p1_name" required>
+                        <input type="text" name="p1_name">
                     </label>
                 </fieldset>
 
+        </div>
+
+        <div id="plusoneExtra" style="display: none">
+            <!-- Plus One Extra Fields-->
+                     <!-- Starter -->
+        <fieldset>
+            <legend>Wedding Menu</legend>
+            <sub>Starter</sub>
+            <label>
+                <input type="checkbox" name="starter2[]" value="Pork" onclick="onlyOne(this)">
+                Confit Belly of Pork
+            </label>
+            <label>
+                <input type="checkbox" name="starter2[]" value="Bhaji" onclick="onlyOne(this)">
+                Auberine & Spinach Bhaji (Vg)
+            </label>
+
+        <!-- Main -->
+            <sub>Main Course</sub>
+            <label>
+                <input type="checkbox" name="main2[]" value="Beef" onclick="onlyOne(this)">
+                Fillet of Beef Wellington
+            </label>
+            <label>
+                <input type="checkbox" name="main2[]" value="Fish" onclick="onlyOne(this)">
+                Pan-fried Sea Bream
+            </label>
+            <label>
+                <input type="checkbox" name="main2[]" value="Veg" onclick="onlyOne(this)">
+                Wild Mushroom, Chestnut & Thyme Pithivier (Vg)
+            </label>
+
+        <!-- Dessert -->
+            <sub>Dessert</sub>
+            <label>
+                <input type="checkbox" name="dessert2[]" value="Trio">
+                Trio: Warm Chocolate Fondant, Vanilla Panna Cotta & Lemon Posset (V/Vg)
+            </label>
+        </fieldset>
+
+
+        <!-- Extras -->
+        <fieldset>
+            <legend>Extras</legend>
+            <label>
+                Special Dietry Requirements?
+                <input type="text" name="diet2">
+            </label>
+            <label>
+                Any song requests?
+                <input type="text" name="song2">
+            </label>
+            <sub>Favourite Wine?</sub>
+            <label>
+                <input type="checkbox" name="wine2[]" value="White" onclick="onlyOne(this)">
+                White
+            </label>
+            <label>
+                <input type="checkbox" name="wine2[]" value="Red" onclick="onlyOne(this)">
+                Red
+            </label>
+            <label>
+                <input type="checkbox" name="wine2[]" value="Rose" onclick="onlyOne(this)">
+                Rose
+            </label>
+            <label>
+                <input type="checkbox" name="wine2[]" value="None" onclick="onlyOne(this)">
+                None
+            </label>
+        </fieldset>
         </div>
 
         <button type="submit">Submit</button>
