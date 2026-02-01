@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const accommodation = document.getElementById("accommodation");
   const plusone = document.getElementById("plusone");
   const plusoneExtra = document.getElementById("plusoneExtra");
+  const nameField = this.document.getElementById("guest_name");
+  const comingSection = this.document.getElementById("coming");
   var nameValue = "";
   const nameList = ["pete","shirley","emma","cherry","james","vicky","callum","debbie","victoria","lauren","ricky","george","georgina","mike","michael","mia","russ","steph","sean","breda","harry","ginny","harrison","virginia","robyn","jonah","matthew","matt","geraldine","danielle","dan","penny",];
   const p1List = ["mia","becky","dan","penny","sarah","jodie","russ","amy","emma","george","georgina"]
@@ -52,6 +54,19 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  nameField.addEventListener("input", () => {
+  const hasName = nameField.value.trim().length > 0;
+
+  comingSection.style.display = hasName ? "block" : "none";
+
+  // Optional: reset coming radios if name is cleared
+  if (!hasName) {
+    document
+      .querySelectorAll('input[name="coming"]')
+      .forEach(radio => radio.checked = false);
+  }
+})
 });
 
 function onlyOne(checkbox) {
