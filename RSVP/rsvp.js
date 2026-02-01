@@ -66,18 +66,53 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const Attending =
-    document.querySelector('input[name="coming"]:checked')?.value || "test1";
+    document.querySelector('input[name="coming"]:checked')?.value || "blank";
 
   const Name =
-    document.querySelector('input[name="guest_name"]').value || "test2";
+    document.querySelector('input[name="guest_name"]').value || "blank";
 
   const Starter =
-    document.querySelector('input[name="starter"]:checked')?.value || "test1";;
+    document.querySelector('input[name="starter"]:checked')?.value || "blank";
+    
+  const Main =
+    document.querySelector('input[name="main"]:checked')?.value || "blank";
 
+  const Dessert =
+    document.querySelector('input[name="dessert"]:checked')?.value || "blank";    
+
+  const Diet =
+    document.querySelector('input[name="diet"]').value || "blank";
+
+  const Wine =
+    document.querySelector('input[name="wine"]:checked')?.value || "blank";
+
+  const Accomodation =
+    document.querySelector('input[name="accommodation"]:checked')?.value || "blank";
+
+  const PlusOne =
+    document.querySelector('input[name="p1"]:checked')?.value || "blank";
+
+  const PlusName =
+    document.querySelector('input[name="p1_name"]').value || "blank";
+
+  const PlusStarter =
+    document.querySelector('input[name="starter2"]:checked')?.value || "blank";
+    
+  const PlusMain =
+    document.querySelector('input[name="main2"]:checked')?.value || "blank";
+
+  const PlusDessert =
+    document.querySelector('input[name="dessert2"]:checked')?.value || "blank";    
+
+  const PlusDiet =
+    document.querySelector('input[name="diet2"]').value || "blank";
+
+  const PlusWine =
+    document.querySelector('input[name="wine2"]:checked')?.value || "blank";
 
   fetch("https://script.google.com/macros/s/AKfycbzzXBOKEG4qimBw0JyVvF97J5p098mYWDNrRw-Vu7Hj4xFHFIutuieGyhkrc4ndK5VW/exec", {
     method: "POST",
-    body: JSON.stringify({ Name, Attending, Starter})
+    body: JSON.stringify({ Name, Attending, Starter, Main, Dessert, Diet, Wine, Accomodation, PlusOne, PlusName, PlusStarter, PlusMain, PlusDessert, PlusDiet, PlusWine})
   })
   .then(res => res.json())
   .then(() => {
