@@ -15,7 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const hasName = nameField.value.trim().length > 0;
   console.log("change!")
 
-  comingSection.style.display = hasName ? "block" : "none";
+  if (hasName === true) {
+    comingSec.style.display = "block";
+  }
+  else {
+    comingSec.style.display = "none";
+  }
+
+  //comingSection.style.display = hasName ? "block" : "none";
 
   // Optional: reset coming radios if name is cleared
   if (!hasName) {
