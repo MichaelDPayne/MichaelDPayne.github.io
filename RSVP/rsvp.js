@@ -66,10 +66,10 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const coming =
-    document.querySelector('input[name="coming"]:checked')?.value || "";
+    document.querySelector('input[name="coming"]:checked')?.value || "test1";
 
   const name =
-    document.querySelector('input[name="guest_name"]').value || "";
+    document.querySelector('input[name="guest_name"]').value || "test2";
 
   fetch("https://script.google.com/macros/s/AKfycbzzXBOKEG4qimBw0JyVvF97J5p098mYWDNrRw-Vu7Hj4xFHFIutuieGyhkrc4ndK5VW/exec", {
     method: "POST",
