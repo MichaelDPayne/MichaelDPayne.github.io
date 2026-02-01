@@ -31,6 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
       .querySelectorAll('input[name="coming"]')
       .forEach(radio => radio.checked = false);
       submitBtn.disabled = true;
+        extraFields.style.display = "none";
+        accommodation.style.display = "none";
+        plusone.style.display = "none";
+        plusoneExtra.style.display = "none";
   }
 })
 
