@@ -1,59 +1,121 @@
 
-body {
-    font-family: 'Snell Roundhand', cursive;
+/* body {
+    font-family: 'Lucida Handwriting', cursive;
     text-align: center;
-    background-image: url("NewImages/Background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center top;
+    align-content: center;
+} */
+
+
+body {
+    font-family: 'Lucida Handwriting', cursive;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.5;
 }
 
-section {
-  background: transparent;
-}
+/* body {
+  margin: 0;
+  background-image: url("NewImages/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+} */
 
+html {
+    scroll-behavior: smooth;
+}
 
 button {
-    margin: 3%;
+    width: 100%;
+    padding: 14px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #ad2857;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #e3a6bb;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+    color: #ad2857;
 }
 
 p {
-    font-size: 1.75rem;
+    font-size: clamp(1rem, 2.5vw, 1.75rem);
 }
 
 td {
     padding: 30px;
 }
-
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 
 /*****************CLASSES*****************/
 
 
 .page-bg {
-  background-image: url("NewImages/Background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("NewImages/Background.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    margin: 0;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;
+    min-height: 100vh; */
+}
+/*.page-border {
+    position: absolute;
+    inset: 20px;
+
+    background-image: url("NewImages/goldborder-removebg-preview.png");
+    background-size: contain;
+    background-position: center-top;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+    z-index: 1;
+}*/
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border-color: #ad2857;
 }
 
-
 .big-heading {
-    font-size: 3.5rem;
-    line-height: 1.5;
+    font-size: clamp(4rem, 5vw, 5rem);
+    line-height: 1.3;
     margin: 3%;
 }
 
-.container-fluid {
-    padding: 7% 15%;
-    width: 80%;
+#OOTDTime{
+    color: #ad2857;
 }
 
 .section-heading {
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
     padding-bottom: 5%;
 }
 
@@ -89,42 +151,9 @@ td {
     color: sandybrown;
 }
 
-/* Features Classes */
-
-.featicon {
-    color: sandybrown;
-    position: static;
-    z-index: 2;
-}
-
-    .featicon:hover {
-        color: mediumorchid;
-    }
 
 .feature-heading {
     padding: 6% 0 3% 0;
-}
-
-/* Games Section Classes */
-
-.games-image {
-    margin-bottom: 3%;
-    width: 10%;
-}
-
-.games-text {
-    font-size: 3.5rem;
-    font-weight: 700;
-    padding: 5% 30% 5%;
-}
-
-/* Tech Section Classes */
-
-.tech-logo {
-    width: 10%;
-    height: 5%;
-    margin: 3%;
-    padding: 2%;
 }
 
 /* Title Section Classes */
@@ -135,61 +164,39 @@ td {
 
 /*********************ID*****************/
 
-/* Navbar Id's */
-
-#brand {
-    font-family: 'Snell Roundhand', cursive;
-    font-size: 2rem;
-}
-
 /* Call to Action Section Id's */
-
 
-/* Feature Id's */
-
-#features {
-    margin: 5% 5%;
-    line-height: 1.5;
-}
-
-/* Footer Id's */
-
-
-    #footer a {
-        padding: 10px 20px;
-    }
-
-    #footer p {
-        margin: 0;
-    }
-
-/* Games Id's*/
-
-
-
-/* Tech Id's */
-
-
-/* Title Id's */
-
-#title {
-    text-align: left;
+#cta {
+    padding-bottom: 50%;
 }
 
 #title-img {
-    margin: auto;
-    width: 100%;
+    align-self: center;
+    padding-top: 50%;
 }
 
 /* About Section Id's*/
 
 /*********************Media Query Breakpoints*****************/
 
-@media (max-width: 1028px) {
-    #title {
-        text-align: center;
+/* @media (max-width: 768px) {
+
+    body {
+        scroll-snap-type: y proximity; /* Softer snap on mobile 
+    }*/
+
+ /*   section {
+        min-height: 100svh; /* Fix mobile browser UI height issues 
+        padding: 15% 6%;
     }
-}
+    section::before {
+        inset: 10px;
+    }
+} */
+
+
+
+
 
 
 

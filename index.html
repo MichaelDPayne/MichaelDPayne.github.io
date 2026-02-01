@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Rosie and Michael's Wedding</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Bootsrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,48 +19,23 @@
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
     <!--Bootstrap Code-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 </head>
 <body>
+    <div class="page-bg"></div>
+
     <section id="title" class="sect">
         <div class="container-fluid">
-            <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-lg bg-light">
-                <a id="brand" class="navbar-brand" href="">Rosie and Michael's Wedding</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar">
-                    <span><i class="fas fa-bars fa-2x"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mainnavbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#location">Location</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#ootd">Order of the Day</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#menu">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#footer">RSVP</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
             <!-- Title -->
-                <div class="col-lg-6">
+                <div>
                     <img id="title-img" src="NewImages/HeaderPhoto.jpg" alt="iphone-mockup">
                 </div>
-            <div class="row">
-                <div class="col-lg-6">
+            <div>
+                <div>
                     <h1 class="big-heading">Rosie and Michael's Wedding</h1>
-                    <a class="nav-link" href="RSVP/form.html"><button class="btn btn-light btn-lg" type="button"><i class="fa-solid fa-envelope-circle-check"></i> RSVP</button></a>
+                    <a class="nav-link" href="RSVP/form.html"><button type="button">RSVP</button></a>
                 </div>
             </div>
         </div>
@@ -66,112 +43,201 @@
 
     <!-- Location -->
     <section id="location" class="sect">
+    <fieldset>
+    <div class="page-border"></div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2 class="feature-heading">Address</h2>
-                    <p class="address">Holmewood Hall<br>Church St<br>Holme<br>Peterborough<br>PE7 3BZ.</p>
+            <div>
+
+               <div>
+                    <h2 class="feature-heading">Save the Date!</h2>
+                    <p>Wednesday 17th June 2026</p>
                 </div>
-                <div class="col-lg-4">
+                <div>
+
                     <h2 class="feature-heading">Time</h2>
-                    <p>12:30pm - Midnight</p>
+                    <p>12:00pm - Midnight</p>
                 </div>
-                <div class="col-lg-4">
-                    <h2 class="feature-heading">Order of the Day</h2>
-                    <p>See our how the day will unfold!</p>
+                <div>
+
+                    <h2 class="feature-heading">Address</h2>
+                    <p class="address">Holmewood Hall<br>Church St<br>Holme<br>Peterborough<br>PE7 3BZ</p>
                 </div>
             </div>
         </div>
+    </fieldset>
     </section>
 
     <!-- OOTD -->
     <section id="games" class="sect">
 
-       <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2 class="feature-heading">Address</h2>
-                    <p class="address">Holmewood Hall<br>Church St<br>Holme<br>Peterborough<br>PE7 3BZ.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h2 class="feature-heading">Time</h2>
-                    <p>12:30pm - Midnight</p>
-                </div>
-                <div class="col-lg-4">
-                    <h2 class="feature-heading">Order of the Day</h2>
-                    <p>See our how the day will unfold!</p>
+       <fieldset>
+           <div class="container-fluid">
+                <div>
+                    <div >
+                        <h2 class="feature-heading">Order of the Day</h2>
+                        <p>See our how the day will unfold!</p>
+                    </div>
+                    <div >
+                        <p id="OOTDItem"></p>Guest Arrival & Welcome Drinks<p id="OOTDTime">12:00pm</p>
+                    </div>
+                    <div >
+                        <p id="OOTDItem"></p>Ceremony<p id="OOTDTime">2pm</p>
+                    </div>
+                    <div >
+                        <p id="OOTDItem"></p>Canapes & Photos<p id="OOTDTime">2:40pm</p>
+                    </div>
+                    <div >
+                        <p id="OOTDItem"></p>Wedding Breakfast<p id="OOTDTime">4pm</p>
+                    </div>
+                    <div >
+                        <p id="OOTDItem"></p>First Dance & Cake Cut<p id="OOTDTime">7pm</p>
+                    </div>
+                    <div >
+                        <p id="OOTDItem"></p>Evening Buffet & Entertainment<p id="OOTDTime">8:30pm</p>
+                    </div>
+                    <div >
+                        <p id="OOTDItem"></p>Carriages<p id="OOTDTime">Midnight</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+       </fieldset>
+    </section>
+
 
     <!-- About -->
     <section id="about" class="sect">
-        <div class="container-fluid">
-            <h2 class="section-heading">Menu</h2>
-
-            <div class="row">
-                <div class=" col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="about-heading">Starters</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Pork Belly</p>
-                            <p>Bahji</p>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="about-heading">Dice</h3>
-                        </div>
-                        <div class="card-body">
-                            <h2>A Great Descision Maker</h2>
-                            <p>Built in Javascript</p>
-                            <p>Just Roll with It</p>
-                            <p>Old School</p>
+        <fieldset>
+            <div class="container-fluid">
+                <h2 class="section-heading">Wedding Breakfast Menu</h2>
+                <div>
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="about-heading">Starters</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Confit Belly of Pork, maple syrup, black pudding & oat cake crumb with apple & ginger salad</p>
+                                <p>Aubergine & Spinach Bhaji (Vg), coconut cream raita, grated cucumber and wild garlic</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class=" col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="about-heading">Simon Says</h3>
+                    <br>
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="about-heading">Main</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Fillet of Beef Wellington, mushroom & chicken parfait duxelles with Madeira cream & buttered mash</p>
+                                <p>Pan-fried Sea Bream, king prawns, crushed new potatoes with asparagus & lemon beurre blanc</p>
+                                <p>Wild Mushroom, Chestnut & Thyme Pithivier (Vg) with pomme puree & agave nectar roasted roots</p>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2>Classic</h2>
-                            <p>Built with JQuery</p>
-                            <p>Progressive Difficulty</p>
-                            <p>Mind Trainer</p>
+                    </div>
+                    <br>
+                    <div >
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="about-heading">Dessert</h3>
+                            </div>
+                            <div class="card-body">
+                                <h2>Trio</h2>
+                                <p>Warm Chocolate Fondant with black forest cherries, clotted cream & chocolate sauce</p>
+                                <p>Vanilla Panna Cotta with raspberry compote, elderflower syrup and biscotti</p>
+                                <p>Chilled Lemon Posset with lavender shortbread and raspberries</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </fieldset>
+    </section>
+    <section>
+           <fieldset>
+           <div class="container-fluid">
+                <div>
+                    <div >
+                        <h2 class="feature-heading">Evening Buffet & Entertainment</h2>
+                        <p></p>
+                    </div>
+                    <div >
+                        <h3 id="EveTitle">Evening Buffet</h3><p id="EveDet">A BBQ Grill will be served in the evening with plenty of options!</p>
+                    </div>
+                    <div >
+                        <h3 id="EveTitle">Evening Entertainment</h3><p id="EveDet">Music, Garden Games and a group game for those that want to take part!</p>
+                    </div>
+                </div>
+            </div>
+       </fieldset>
     </section>
 
+        <section>
+           <fieldset>
+           <div class="container-fluid">
+                <div>
+                    <div >
+                        <h2 class="feature-heading">Accommadation</h2>
+                        <p>For those staying with us at the Venue!</p>
+                    </div>
+                    <div >
+                        <h3 id="Acc">On Arrival</h3><p id="AccDet">Staff will check you in and show you to your rooms before welcome drinks</p>
+                    </div>
+                    <div >
+                        <h3 id="Acc">The Morning After</h3><p id="AccDet">Breakfast will be served between 8:30-9:30am. Check-out will be 10am</p>
+                    </div>
+                </div>
+            </div>
+       </fieldset>
+    </section>
+
+    <section>
+        <fieldset>
+           <div class="container-fluid">
+                <div>
+                    <div >
+                        <h2 class="feature-heading">Extra Information</h2>
+                        <p></p>
+                    </div>
+                    <div >
+                        <h3 id="Acc">Taxi Information</h3><p id="AccDet">Due to limited reception you may want to book your taxis from the venue beforehand, please see below a list of reccomended local taxis</p>
+                        <div >
+                            <p id="Taxi"></p>Peterborough Cars<p id="TaxiNum">01733 704444</p>
+                        </div>
+                        <div >
+                            <p id="Taxi"></p>Peterborough Taxis 247<p id="TaxiNum">01733 785102</p>
+                        </div>
+                        <div >
+                            <p id="Taxi"></p>Royal Taxis Peterborough<p id="TaxiNum">01733 777000</p>
+                        </div>
+                    </div>
+                    <div >
+                        <h3 id="Acc">Extra Accommadation</h3><p id="AccDet">Depending on responses, There may be extra Accommadation available at the venue. Please just give us a message if you are interested!</p>
+                    </div>
+                </div>
+            </div>
+       </fieldset>
+    </section>
+    
     <!-- Call to Action -->
     <section id="cta" class="sect">
         <div class="container-fluid">
-            <h3 class="big-heading">Play Bulls & Cows Today!</h3>
-            <button class="btn btn-lg btn-dark" type="button"><i class="fas fa-arrow-alt-circle-down"></i> Download</button>
-            <button class="btn btn-lg btn-outline-dark" type="button"><i class="fas fa-thumbs-up"></i>Like</button>
+            <h3>Fill out the RSVP!</h3>
+            <a class="nav-link" href="RSVP/form.html"><button type="button">RSVP</button></a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="footer">
-        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-        <a href="mailto: michael_payne123@hotmail.co.uk"><i class="far fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/michael-payne-475554181"><i class="fab fa-linkedin"></i></a>
-        <p>© Copyright 2019 Gaming Paynes</p>
-    </footer>
+    </footer>
+
 </body>
 </html>
+
+
+
+
+
+
 
 
 
