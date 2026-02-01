@@ -114,19 +114,10 @@ fieldset {
     color: #ad2857;
 }
 
-#OOTDItem{
-    font-weight: bold;
-}
-
 .section-heading {
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     padding-bottom: 5%;
 }
-
-.card {
-    padding-top: 20%;
-}
-
 
 /*.sect {
      background-image: url("NewImages/Background.jpg");
@@ -175,6 +166,9 @@ fieldset {
 
 /* Call to Action Section Id's */
 
+#cta {
+    padding-bottom: 50%;
+}
 
 #title-img {
     align-self: center;
