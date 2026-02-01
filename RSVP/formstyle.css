@@ -52,6 +52,8 @@ input[type="text"] {
     margin-top: 6px;
     box-sizing: border-box;
     font-size: 16px;
+    text-align: center;
+    font-family: 'Lucida Handwriting', cursive;
 }
 
 input[type="checkbox"] {
@@ -66,12 +68,12 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 6px;
-    background-color: #333;
+    background-color: #ad2857;
     color: #fff;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #e3a6bb;
 }
 
 .border-image {

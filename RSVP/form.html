@@ -14,56 +14,57 @@
         <fieldset>
             <legend>Guest Details</legend>
             <label>
-                Name:
+                Full Name:
                 <input type="text" name="guest_name" required>
             </label>
         </fieldset>
                 <fieldset>
                     <sub>Are you able to join us?</sub>
                     <label>
-                        <input type="checkbox" name="coming" value="Yes">
+                        <input type="checkbox" name="coming" value="Yes" onclick="onlyOne(this)">
                         Accept with pleasure
                     </label>
                     <label>
-                        <input type="checkbox" name="coming" value="No">
+                        <input type="checkbox" name="coming" value="No" onclick="onlyOne(this)">
                         Decline, will be there in spirit
                     </label>
                 </fieldset>
 
+        <div id="extraFields" style="display: none">
+
         <!-- Starter -->
         <fieldset>
             <legend>Wedding Menu</legend>
-            <div class="border-image"></div>
             <sub>Starter</sub>
             <label>
-                <input type="checkbox" name="starter[]" value="Pork">
+                <input type="checkbox" name="starter[]" value="Pork" onclick="onlyOne(this)">
                 Confit Belly of Pork
             </label>
             <label>
-                <input type="checkbox" name="starter[]" value="Bhaji">
+                <input type="checkbox" name="starter[]" value="Bhaji" onclick="onlyOne(this)">
                 Auberine & Spinach Bhaji (Vg)
             </label>
 
         <!-- Main -->
             <sub>Main Course</sub>
             <label>
-                <input type="checkbox" name="main[]" value="Beef">
+                <input type="checkbox" name="main[]" value="Beef" onclick="onlyOne(this)">
                 Fillet of Beef Wellington
             </label>
             <label>
-                <input type="checkbox" name="main[]" value="Fish">
+                <input type="checkbox" name="main[]" value="Fish" onclick="onlyOne(this)">
                 Pan-fried Sea Bream
             </label>
             <label>
-                <input type="checkbox" name="main[]" value="Veg">
-                Wild Mushroom, Chestnut & Thyme Pithivier (V)
+                <input type="checkbox" name="main[]" value="Veg" onclick="onlyOne(this)">
+                Wild Mushroom, Chestnut & Thyme Pithivier (Vg)
             </label>
 
         <!-- Dessert -->
             <sub>Dessert</sub>
             <label>
                 <input type="checkbox" name="dessert[]" value="Trio">
-                Trio: Warm Chocolate Fondant, Vanilla Panna Cotta & Lemon Posset (V)
+                Trio: Warm Chocolate Fondant, Vanilla Panna Cotta & Lemon Posset (V/Vg)
             </label>
         </fieldset>
 
@@ -77,26 +78,29 @@
             </label>
             <label>
                 Any song requests?
-                <input type="text" name="diet">
+                <input type="text" name="song">
             </label>
             <sub>Favourite Wine?</sub>
             <label>
-                <input type="checkbox" name="main[]" value="White">
+                <input type="checkbox" name="wine[]" value="White" onclick="onlyOne(this)">
                 White
             </label>
             <label>
-                <input type="checkbox" name="main[]" value="Red">
+                <input type="checkbox" name="wine[]" value="Red" onclick="onlyOne(this)">
                 Red
             </label>
             <label>
-                <input type="checkbox" name="main[]" value="Rose">
+                <input type="checkbox" name="wine[]" value="Rose" onclick="onlyOne(this)">
                 Rose
             </label>
             <label>
-                <input type="checkbox" name="main[]" value="None">
+                <input type="checkbox" name="wine[]" value="None" onclick="onlyOne(this)">
                 None
             </label>
         </fieldset>
+
+        </div>
+        <div id="accommodation" style="display: none">
 
 
         <!-- Accommodation -->
@@ -105,14 +109,107 @@
             There are a number of rooms at the venue, we have allocated a room to you if you wish!
             Would you like to stay the night?
             <label>
-                <input type="checkbox" name="accommodation" value="Yes">
+                <input type="checkbox" name="accommodation" value="Yes" onclick="onlyOne(this)">
                 Yes please!
             </label>
             <label>
-                <input type="checkbox" name="accommodation" value="No">
+                <input type="checkbox" name="accommodation" value="No" onclick="onlyOne(this)">
                 Sorry, I can't stay.
             </label>
         </fieldset>
+
+        </div>
+
+        <div id="plusone" style="display: none">
+        <!-- Plus One -->
+        <fieldset>
+            <legend>Plus One</legend>
+                    Would you like to add a plus one?
+                    <label>
+                        <input type="checkbox" name="p1" value="Yes" onclick="onlyOne(this)">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="checkbox" name="p1" value="No" onclick="onlyOne(this)">
+                        No
+                    </label>
+                    <label>
+                        Full Name:
+                        <input type="text" name="p1_name">
+                    </label>
+                </fieldset>
+
+        </div>
+
+        <div id="plusoneExtra" style="display: none">
+            <!-- Plus One Extra Fields-->
+                     <!-- Starter -->
+        <fieldset>
+            <legend>Wedding Menu</legend>
+            <sub>Starter</sub>
+            <label>
+                <input type="checkbox" name="starter2[]" value="Pork" onclick="onlyOne(this)">
+                Confit Belly of Pork
+            </label>
+            <label>
+                <input type="checkbox" name="starter2[]" value="Bhaji" onclick="onlyOne(this)">
+                Auberine & Spinach Bhaji (Vg)
+            </label>
+
+        <!-- Main -->
+            <sub>Main Course</sub>
+            <label>
+                <input type="checkbox" name="main2[]" value="Beef" onclick="onlyOne(this)">
+                Fillet of Beef Wellington
+            </label>
+            <label>
+                <input type="checkbox" name="main2[]" value="Fish" onclick="onlyOne(this)">
+                Pan-fried Sea Bream
+            </label>
+            <label>
+                <input type="checkbox" name="main2[]" value="Veg" onclick="onlyOne(this)">
+                Wild Mushroom, Chestnut & Thyme Pithivier (Vg)
+            </label>
+
+        <!-- Dessert -->
+            <sub>Dessert</sub>
+            <label>
+                <input type="checkbox" name="dessert2[]" value="Trio">
+                Trio: Warm Chocolate Fondant, Vanilla Panna Cotta & Lemon Posset (V/Vg)
+            </label>
+        </fieldset>
+
+
+        <!-- Extras -->
+        <fieldset>
+            <legend>Extras</legend>
+            <label>
+                Special Dietry Requirements?
+                <input type="text" name="diet2">
+            </label>
+            <label>
+                Any song requests?
+                <input type="text" name="song2">
+            </label>
+            <sub>Favourite Wine?</sub>
+            <label>
+                <input type="checkbox" name="wine2[]" value="White" onclick="onlyOne(this)">
+                White
+            </label>
+            <label>
+                <input type="checkbox" name="wine2[]" value="Red" onclick="onlyOne(this)">
+                Red
+            </label>
+            <label>
+                <input type="checkbox" name="wine2[]" value="Rose" onclick="onlyOne(this)">
+                Rose
+            </label>
+            <label>
+                <input type="checkbox" name="wine2[]" value="None" onclick="onlyOne(this)">
+                None
+            </label>
+        </fieldset>
+        </div>
 
         <button type="submit">Submit</button>
 
