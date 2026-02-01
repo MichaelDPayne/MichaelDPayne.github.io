@@ -117,6 +117,7 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
   .then(res => res.json())
   .then(() => {
     alert("Response saved!");
+    location.replace("RSVP/thanks.html")
     this.reset();
   })
   .catch(err => {
