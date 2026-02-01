@@ -73,9 +73,6 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
 
   fetch("https://script.google.com/macros/s/AKfycbzzXBOKEG4qimBw0JyVvF97J5p098mYWDNrRw-Vu7Hj4xFHFIutuieGyhkrc4ndK5VW/exec", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
     body: JSON.stringify({ coming, name })
   })
   .then(res => res.json())
