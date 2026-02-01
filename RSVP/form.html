@@ -121,6 +121,29 @@
 
         </div>
 
+        <div id="plusone" style="display: none">
+        <!-- Plus One -->
+        <fieldset>
+            <legend>Plus One</legend>
+                <fieldset>
+                    <sub>Would you like to add a plus one?</sub>
+                    <label>
+                        <input type="checkbox" name="p1" value="Yes" onclick="onlyOne(this)">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="checkbox" name="p1" value="No" onclick="onlyOne(this)">
+                        No
+                    </label>
+                </fieldset>
+                    <label>
+                        Name:
+                        <input type="text" name="p1_name" required>
+                    </label>
+                </fieldset>
+
+        </div>
+
         <button type="submit">Submit</button>
 
     </form>

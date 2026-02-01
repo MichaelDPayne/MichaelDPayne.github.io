@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const radios = document.querySelectorAll('input[name="coming"]');
   const extraFields = document.getElementById("extraFields");
   const accommodation = document.getElementById("accommodation");
-  const name = document.getElementById("guest_name");
+  const plusone = document.getElementById("plusone");
   var nameValue = "";
-  const nameList = ["pete","shirley","emma","cherry","james","vicky","callum","debbie","victoria","lauren","ricky","george","georgina","mike","michael","mia","russ","steph","sean","breda","harry","ginny","harrison","virginia","robyn","jonah","matthew","matt","geraldine","danielle","dan","penny"];
+  const nameList = ["pete","shirley","emma","cherry","james","vicky","callum","debbie","victoria","lauren","ricky","george","georgina","mike","michael","mia","russ","steph","sean","breda","harry","ginny","harrison","virginia","robyn","jonah","matthew","matt","geraldine","danielle","dan","penny",];
+  const p1List = ["pete","shirley","emma","lauren","george","georgina","mia","russ","ginny","virginia","becky","dan","penny","sarah","sean","steph","cherry","james","jonah","robyn"]
 
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
@@ -21,9 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
           accommodation.style.display = "none";
         }
 
+        if (p1List.some(name => nameValue.toLowerCase().includes(name))) {
+          plusone.style.display = "block";
+        }
+        else {
+          plusone.style.display = "none";
+        }
+
       } else {
         extraFields.style.display = "none";
         accommodation.style.display = "none";
+        plusone.style.display = "none";
       }
     });
   });
