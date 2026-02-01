@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const plusoneExtra = document.getElementById("plusoneExtra");
   var nameValue = "";
   const nameList = ["pete","shirley","emma","cherry","james","vicky","callum","debbie","victoria","lauren","ricky","george","georgina","mike","michael","mia","russ","steph","sean","breda","harry","ginny","harrison","virginia","robyn","jonah","matthew","matt","geraldine","danielle","dan","penny",];
-  const p1List = ["pete","shirley","emma","lauren","george","georgina","mia","russ","ginny","virginia","becky","dan","penny","sarah","sean","steph","cherry","james","jonah","robyn"]
+  const p1List = ["pete","shirley","emma","lauren","george","georgina","mia","russ","ginny","virginia","becky","dan","penny","sarah","sean","steph","cherry","james","jonah","robyn","jodie"]
 
   radios.forEach(radio => {
     radio.addEventListener("change", function () {
@@ -70,6 +70,10 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
 
   const Name =
     document.querySelector('input[name="guest_name"]').value || "test2";
+
+  const Starter =
+    document.querySelector('input[name="Starter[]"]:checked')?.value || "";
+
 
   fetch("https://script.google.com/macros/s/AKfycbzzXBOKEG4qimBw0JyVvF97J5p098mYWDNrRw-Vu7Hj4xFHFIutuieGyhkrc4ndK5VW/exec", {
     method: "POST",
