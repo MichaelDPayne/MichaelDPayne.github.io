@@ -1,10 +1,19 @@
 
-body {
+/* body {
     font-family: 'Lucida Handwriting', cursive;
     text-align: center;
     align-content: center;
-}
+} */
 
+
+body {
+    font-family: 'Lucida Handwriting', cursive;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.5;
+}
 
 /* body {
   margin: 0;
@@ -214,20 +223,20 @@ img {
 
 /*********************Media Query Breakpoints*****************/
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
     body {
-        scroll-snap-type: y proximity; /* Softer snap on mobile */
-    }
+        scroll-snap-type: y proximity; /* Softer snap on mobile 
+    }*/
 
-    section {
-        min-height: 100svh; /* Fix mobile browser UI height issues */
+ /*   section {
+        min-height: 100svh; /* Fix mobile browser UI height issues 
         padding: 15% 6%;
     }
     section::before {
         inset: 10px;
     }
-}
+} */
 
 
 
